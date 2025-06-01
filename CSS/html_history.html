@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+
+ <!-- this tag must be #2, it tells the browser and search engine that this page is in English-->
+ <html lang="en">
+
+ <!-- the head section primarily gives information to the browser and search engine, all the user will see is the Title -->
+ <head>
+<!-- this tag tells the browser that virtually any character from any language may be on this page -->
+    <meta charset="UTF-8">
+    <!-- this viewport tag is the most important to getting a cohesive page, make sure it's on every single webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is the title of the page, keep it descriptive and short -->
+    <title>HTML History</title>
+
+    <!-- Embedded CSS styles go in the head section between <style> and </style> tags -->
+     <style>
+
+
+     </style>
+
+ </head>
+
+<!-- this is the body, where the content of the page will go -->
+
+ <body>
+
+
+<!-- this is the Header semantic, usually a logo, menu, or page title will go here  -->
+    <header>
+        <h1>CSC104 and CSS History </h1>
+    </header>
+
+    <!--link to external css file, this is the best way to include css on our page-->
+    <link rel="stylesheet" href="main.css">
+
+   <!-- the core content of the page goes here-->
+    <main>
+      <!-- HTML history section-->
+         <section>
+            <!-- h2 is the second level heading;  you can use as many h2 tags as makes sensee for yout content  -->
+            <h2>HTML Explained</h2>
+            <p>HTML stands for HyperText Markup Language. HTML provudes the structure of the webpage by marking up the text. 
+               You can (and should) use variety of HTML tags to build the webpage content. 
+               HTML does not have many rules (other than if you opn a tag, you sould usually close it).
+            One and only one h1 tag is a best practice.</p>
+
+            <!-- another h2 to provide a subtitle for the next section -->
+             <h2>History of HTML</h2>
+             <!-- we will create a list of HTML versions
+              we are usingt he unorded list - ul with listitems - li; by default, li adds a bullet point in front of each line 
+              if you want a numbered list, use the ordered list - ol - for each li in an ol, there will be a number in front of each line -->
+             <ul>
+               <li>HTML 1.0 - developed in the 1990's</li>
+               <li>HTML 2.0 - released in 1995</li>
+               <li>HTML 3.2 - released in 1997</li>
+               <li>HTML 5 - released in 2014 (current version of HTML)</li>
+             </ul>
+
+             <!-- custom class htmlImg lets us change this one in particular-->
+             <img class="htmlImg" src="./css_first.png" alt="HTML is the structure of a webpage, represented by shipping containers stacked in the form of a house.
+             CSS is how you make those shipping containers look like fancy mansions.">
+
+         </section>
+
+         <!-- CSS Explanation and History -->
+         <section>
+            <!-- subheading for CSS -->
+            <h2>CSS Explained</h2>
+            <!-- paragraph explaining CSS -->
+            <p>
+               CSS stands for Cascading Style Sheets. CSS is a language that exists to make HTML look better. CSS can control
+               layout, colors, fonts - basically any visual element on the page can be changed from the default browser style 
+               using CSS.
+            </p>
+
+            <h2>History of CSS</h2>
+            <ul>
+               <li>CSS1 released in 1996</li>
+               <li>CSS2 released in 1998</li>
+               <li>CSS3 released in 2011 (current version of CSS) - living standard</li>
+            </ul>
+
+            <!-- CSS Syntax -->
+             <h2 id="h2CSSstructure">CSS Structure</h2>
+
+             <!-- you can use a pre section to have the browser respect any formatting - good for displaying code -->
+             
+             <pre>
+               /* HTML element */
+               selector{
+                  property: value;
+               
+               }
+
+               /* custom class */
+               /redText{
+                  color: red;
+                  }
+
+               /* class based on the id of the HTML element */
+               #h2CSSstructure{
+                  color: blue;
+               }
+             </pre>
+             <ul> 
+               <li>CSS selectors: they can be an HTML element, custom class, based on the id of the HTML element</li>
+               <li>CSS helps with the separation of content from style</li>               
+               <li>Helps with maintainability</li>
+               <li>Accessbility issues can be more easily managed with CSS</li>
+            </ul>
+            <!-- inline style [USE WITH CAUTION] -->
+            <!-- color is the text color, background-color is the background
+             good contrast is important between the two -->
+
+            <h2 style="color: fuchsia; background-color: yellow;">3 Ways to Include CSS</h2>
+            <!-- the 3 ways to include CSS on our site -->
+            <ul>
+               <li>External: CSS is in a separate CSS file (best practice)</li>
+               <li>Embedded: CSS on a single page</li>
+               <li>Inline: CSS is set on a specific HTML element (use with caution)</li>
+            </ul>
+
+         </section>
+    </main>
+
+    <footer>
+   <!-- info at the bottom of the pagel maybe sitemap, contact info, legal jargon, etc -->
+    </footer>
+
+ </body>
+
+
+
+
+ </html>

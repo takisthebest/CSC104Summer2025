@@ -1,0 +1,50 @@
+
+/* Body stuff effects the whole page unless overwritten by a more specific style*/
+body{
+/* background color changes the background color */
+background-color: lightblue;
+/* color changes the text color */
+color: fuchsia;
+/*font-family goes through a priority of installed fonts*/
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/*set margin and padding to 0 for more control of the layout */
+margin: 0;
+padding: 0;
+
+}
+/*these styles apply to the stuff in the heading */
+header {
+/*add 10 pixels around everything */
+padding: 10px;
+/*align the text to the center */
+text-align: center;
+}
+
+/*this will effect all of the main content */
+main {
+padding: 10px;
+text-align: justify;
+}
+
+/*this will act as the universal h2, but it can be overridden */
+h2{
+font-size: larger;
+}
+
+
+p{
+font-size: medium;
+}
+
+/*this style will effect all images*/
+/* img{
+width:90%;
+/*setting a max width ensures it doesn't get distorted on a large screen*/
+/*  max-width: 800px;
+}*/
+
+.htmlImg {
+width:90%;
+/*setting a max width ensures it doesn't get distorted on a large screen*/
+max-width: 800px;
+}
