@@ -1,0 +1,30 @@
+ .outerEdge{
+            border: 3px solid red;
+        }
+
+        .content{
+            /* the width and height of the content / text */
+            width: 100px;
+            /*height: 200px; */
+            /*set the background color so we can track the inner div's size */
+            background-color: lightgrey;
+            /* padding is the space between the content and border */
+            /*symmetrical padding, 20 per side */
+
+            padding: 20px;
+            /*you can set specific values */
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            /*top right bottom left */
+            /*padding: 60px 20px 5px 100px;*/
+            /*set a 3px border, this is similar to a picture frame */
+            border: 3px solid purple;
+            /* margin is the spacing outside of the border */
+            /*margin: 40px;*/
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
