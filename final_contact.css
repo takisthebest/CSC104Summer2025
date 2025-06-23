@@ -1,0 +1,57 @@
+            body {
+                /*establish the whole page theme, starting with background color*/
+                background-color: #EEBA0B;
+                /*text color*/
+                color: #710000;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bolder;
+            }
+            
+            .articleImage{
+                /*max width for the images on the page*/
+                max-width: 250px;
+            }
+
+            .parent{
+                /*the header specs*/
+                color: #710000;
+                /* specify flex layout on the parent element */
+                display: flex;
+                /*by default use the whole row for content */
+                flex-direction: column;
+                /* evenly space out the items for aesthetics */
+                justify-content: space-between;
+            }
+
+            
+
+            .baby{ /*smallest text*/
+                /*color:#F4E409;*/
+                color: #A63C06;
+                /*allows the items to grow as needed*/
+                flex-grow: 1;              
+
+            }
+
+
+
+           
+
+            /* set up a media query to make our page look better on a smaller screen */
+            @media screen and (max-width: 850px){
+                .grandparent{
+                    text-size-adjust: large;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .parent{
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .child{
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
