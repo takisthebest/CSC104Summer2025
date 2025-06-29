@@ -9,10 +9,12 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
 
         <!--page name-->
-        <title>Contact Taylor Kelty</title>
+        <title>Taylor Kelty's Info</title>
 
         <!--use the concurring css sheet-->
        <link rel="stylesheet" href="final_contact.css">
+
+        
 
     </head>
 
@@ -21,15 +23,22 @@
 
         <header class="grandparent">
             <!--this is the top of the page-->
-            <h1>@Taylor Kelty</h1>
-            <h2>STEAM: pumpkn games</h2>
+            <nav>
+                    <!-- a is the anchor tag used for hyperlinks to other pages-->
+                     <a href="index.html">Home Page</a> |                    
+                     <a href="portfolio.html">Portfolio</a> |                    
+                     <a href="final_contact.html">Contact</a>
+                </nav>
+            <h1>Taylor Kelty's Info</h1>
+            <h2>STEAM: pumpkn games llc</h2>
+            <!--baby class will function as the subtitle-->
             <p class="baby">game designer, artist, programmer</p>
         </header>
 
         <main class="parent">
             <!--this is all of the body info, starting with the first section-->
             <article class="child">
-                <h2>official website</h2>
+                <h2>Official Website</h2>
                 <!--link to website-->
                 <p class="baby"><a href="https://sheer-need-a02.notion.site/Taylor-Kelty-Portfolio-46c156d99e964e2d99fafbfb59bad4c6">takisthebest.com</a></p>
                 <img src="contact1.png" class="articleImage" alt="top down view of a 2d game featuring dynamic angles">
@@ -37,7 +46,7 @@
 
             <!--the second section-->
             <article class="child">
-                <h2>cellular telephone</h2>
+                <h2>Cellular Telephone</h2>
                 <!--link to phone-->
                 <p class="baby"><a href="tel:9282308850">928.230.8850</a></p>
                 <img src="contact2.png" class="articleImage" alt="a screencap from Spaceship Man 2">
@@ -45,12 +54,30 @@
 
             <!--the third section-->
             <article class="child">
-                <h2>professional email</h2>
+                <h2>Professional Email</h2>
                 <!--link to email-->
                 <p class="baby"><a href="mailto:takisthebest@gmail.com">takisthebest@gmail.com</a></p>
                 <img src="contact3.png" class="articleImage" alt="a screencap from Spaceship Man 2">
             </article>
 
-            <!--this is where a potential fourth entry would go-->
+            <!--this is the form-->
+            <h2>Shoot Me A DM</h2>
+            <!--first, call for their name-->
+            <label for="txtName">Your Name:</label>
+            <input type="text" id="txtName" name="txtName" placeholder="your name">
+            <!--then email-->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+            <!--then their message-->
+            <label for="email">Your Message:</label>
+            <textarea name="txtaComments" id="txtaComments" rows="12" cols="30" placeholder="wow incredible"></textarea>
+            <!--then a submit button-->
+            <input type="submit" value="send it">
+            <!--some breaks before the bottom of the page-->
+            <br>
+            <br>
+            <br>
+        
         </main>
     </body>
+    </html>

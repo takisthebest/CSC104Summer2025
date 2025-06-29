@@ -1,3 +1,9 @@
+            header{
+                background-color: #710000;
+                padding: 20px;
+                text-align: center;
+            }
+            
             body {
                 /*establish the whole page theme, starting with background color*/
                 background-color: #EEBA0B;
@@ -6,10 +12,30 @@
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-weight: bolder;
             }
+
+            nav a{
+                color: #A63C06;
+                flex-grow: 1;  
+            }
+
+            main a{
+                color: #A63C06;
+                flex-grow: 1;  
+            }
             
             .articleImage{
                 /*max width for the images on the page*/
-                max-width: 250px;
+                max-width: 1000px;
+            }
+
+            .grandparent{
+                   color: #EEBA0B;
+                /* specify flex layout on the parent element */
+                display: flex;
+                /*by default use the whole row for content */
+                flex-direction: column;
+                /* evenly space out the items for aesthetics */
+                justify-content: space-between;
             }
 
             .parent{
@@ -23,11 +49,15 @@
                 justify-content: space-between;
             }
 
+            .child {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
             
 
             .baby{ /*smallest text*/
                 /*color:#F4E409;*/
-                color: #A63C06;
+                color: #EEBA0B;
                 /*allows the items to grow as needed*/
                 flex-grow: 1;              
 
